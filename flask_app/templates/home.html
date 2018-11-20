@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+
+    <style>
+
+
+      body {
+        font-family: "Courier New", Courier, monospace;
+        font-weight:500;
+        background-color:#C4E779
+      }
+
+      h1, h1 {display:inline;}
+
+
+      a:link {
+      color: black;
+      }
+
+      a:visited {
+      color: black;
+      }
+
+      a:hover {
+      color: white;
+      font-weight:600;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+
+        <h1>Green</h1><h1 style="color:black; font-weight:500; font-size = 20px;">News</h1></br></br>
+
+
+
+    {% for topic in topics %}
+      <a href= {{topic.link}} > {{topic.topic}}</a><br/><br/>
+    {% endfor %}
+
+  </body>
+
+
+
+</html>
